@@ -1,9 +1,9 @@
-🚀 Projeto: Aprendizado de Servidor Linux no Oracle VirtualBox
+# 🚀 Projeto: Aprendizado de Servidor Linux no Oracle VirtualBox
 
 - Este repositório é um diário técnico do meu processo de aprendizagem construindo um servidor Linux do zero usando o Oracle VirtualBox e o Fedora como sistema operacional.
 - Todos os passos foram feitos diretamente pelo terminal, utilizando o editor vi para escrever os scripts e configurações.
 ---
-🧠 Objetivo
+## 🧠 Objetivo
 
 - Documentar, passo a passo, tudo o que estou aprendendo ao montar um servidor Linux, incluindo:
 
@@ -21,7 +21,7 @@
 
 - Segurança e boas práticas
 ---
-🛠️ Tecnologias e Ferramentas
+## 🛠️ Tecnologias e Ferramentas
 
 💻 Oracle VirtualBox – ambiente de virtualização
 
