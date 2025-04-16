@@ -5,4 +5,32 @@
 - O servidor foi instalado apartir de uma Maquina Virtual (Oracle Virtal Box);
 - Foi baixado uma ISO Debian;
 - Possui duas partições de rede;
+- O método de  partição de disco foi escolhido a Assistido - usar o disco inteiro e configurar o LVM;
+- Esquema de particionamento - Partição /home, /var, /tmp separadas 
+- Softwares que foram instalados: servidor ssh e utilitários de sistema padrão
 
+
+######## RECUPERAÇÃO SENHA ROOT UTILIZANDO O GRUB #########
+
+- Pressionar a tecla E;
+- Com a setinha, ir até em Linux e deletar o "o quiet" e deixar apenas "rw init=/bin/bash", ou seja, iniciar o linux diretamente pelo terminal com acesso de leitura e escrita;
+- ctrl +  x;
+- IMPORTANTE: teclado não funciona padrão abnt;
+- Digitar o comando "passwd";
+- Reininciar o servidor. Reboot não funciona.
+
+###### PERSONALIZAÇÃO DA INICIALIZAÇÃO DO LINUX ######
+
+- Entrar no diretório /etc, é um diretório de configuração do Linux;
+- No diretório digitar "ls issue*" o * é para trazer tudo que tem a palavra issue. Issue é o arquivo que configura o login;
+- O issue.net é o login via ssh;
+- Baixar do repositório Debia a logo - no diretório /etc, digitar o comando apt-get install linuxlogo;
+- Criar um beckup do arquivo issue, ou seja, criar um arquivo issue.bkp;
+- Redirecionar um comando para outro "cat issue.linuxlogo > issue";
+- O sinal de ">" significa que ele vai listar o arquivo issue.linuxlogo, porém a saída vai direcionar para o arquivo issue, ou seja, vai adicionar no aquivo issue.
+
+##### PARA MENSAGEM "BEM VINDO! """"""
+
+- No diretório etc, usar o comando "ls motd*"
+- Renomear o arquivo motd com, mv motd motd.bkp;
+- Recriar um arquivo com vi motd e dentro do aquivo escrever "Bem vindo!".
